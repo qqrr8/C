@@ -44,7 +44,7 @@ int main()
 	result_en = D * dym;
 	result_sp = P * dym;
 	printf("%d английских дюймов – это %.2f см\n", dym, result_en);
-	printf("%d испанских дюймов – это %.2f см", dym, result_sp);
+	printf("%d испанских дюймов – это %.2f см\n", dym, result_sp);
 
 	system("pause");
 }
