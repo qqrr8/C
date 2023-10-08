@@ -10,7 +10,7 @@ int main(void)
 	l = 337;
 	float c;
 	c = (float)n/l;
-	printf("Дано:\n %10d\n %10d\nОтвет:\n %+010.3f\n", n, l, c);
+	printf("Р”Р°РЅРѕ:\n %10d\n %10d\nРћС‚РІРµС‚:\n %+010.3f\n", n, l, c);
 	getchar();
 
 }
