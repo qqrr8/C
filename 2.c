@@ -49,7 +49,7 @@ int main()
 
 //ex 3
 
-int main(void)
+int main()
 {
 	setlocale(LC_ALL, "RUS");
 	int n, l;
