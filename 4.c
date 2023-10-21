@@ -124,32 +124,30 @@ int main()
 
 //homework edit few functions
 
-float a;
-float b;
-float p;
-float aa = 12;
-
-int price()
+float price(float lenght, float widht,float lenghtwp,float prices)
 {
-	int pr = a * b / aa * p;
+	return lenght * widht / lenghtwp * prices;
 }
 
-int pieces()
+float pieces(float lenght, float widht, float lenghtwp)
 {
-	int pc = a * b / aa;
+	return lenght * widht / lenghtwp;
 }
 void main()
 {
 	setlocale(LC_ALL, "RUS");
-
+	float lenght;
+	float widht;
+	float prices;
+	float lenghtwp = 12;
 	puts("Программа для расчета стоимости обоев");
 	puts("Введите длину стены в метрах:");
-	scanf("%f", &a);
+	scanf("%f", &lenght);
 	puts("Введите высоту стены в метрах:");
-	scanf("%f", &b);
+	scanf("%f", &widht);
 	puts("Введите цену рулона обоев в рублях:");
-	scanf("%f", &p);
-	printf("Цена обоев для вашей стены:%d\n", price());
-	printf("Количество необходимых рулонов:%d\n", pieces());
+	scanf("%f", &prices);
+	printf("Цена обоев для вашей стены:%.2f\n", price(lenght, widht, lenghtwp, prices));
+	printf("Количество необходимых рулонов:%.2f\n", pieces(lenght, widht, lenghtwp));
 	system("pause");
 }
