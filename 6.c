@@ -53,7 +53,18 @@ int main()
 	scanf("%d", &year);
 	printf("Ваш год рождения: %d\n", year);
 	int age = 2023 - year;
-	printf("Ваш возраст: %d\n", age);
-
+	if (age%10==1)
+	{
+		printf("Ваш возраст: %d год\n", age);
+	}
+	else
+	if 	(age%10==2 || age % 10 == 3 || age % 10 == 4)
+	{
+		printf("Ваш возраст: %d года\n", age);
+	}
+	else
+	{
+		printf("Ваш возраст: %d лет\n", age);
+	}
 	system("pause");
 }
