@@ -121,3 +121,35 @@ int main()
 	system("pause");
 
 }
+
+//homework edit few functions
+
+float a;
+float b;
+float p;
+float aa = 12;
+
+int price()
+{
+	int pr = a * b / aa * p;
+}
+
+int pieces()
+{
+	int pc = a * b / aa;
+}
+void main()
+{
+	setlocale(LC_ALL, "RUS");
+
+	puts("Программа для расчета стоимости обоев");
+	puts("Введите длину стены в метрах:");
+	scanf("%f", &a);
+	puts("Введите высоту стены в метрах:");
+	scanf("%f", &b);
+	puts("Введите цену рулона обоев в рублях:");
+	scanf("%f", &p);
+	printf("Цена обоев для вашей стены:%d\n", price());
+	printf("Количество необходимых рулонов:%d\n", pieces());
+	system("pause");
+}
