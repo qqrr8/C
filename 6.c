@@ -1,6 +1,7 @@
 #include <locale.h>
 #include <stdio.h>
 
+
 //ex 1
 int main()
 {
@@ -19,6 +20,28 @@ int main()
 		printf("Год %d не високосный\n", year);
 	system("pause");
 }
+
+
+//ex2
+
+int main()
+{
+	setlocale(LC_ALL, "RUS");
+	float F, x;
+	puts("Введите x");
+	scanf("%f", &x);
+	printf("x = %.6f\n", x);
+	if (x <= 1)
+	{
+		printf("F = %.0f\n", F = 0);
+	}
+	else
+	{
+		printf("F = %.6f\n", F = 1 / (x + 6));
+	}
+	system("pause");
+}
+
 
 //ex 3
 int main()
