@@ -68,3 +68,26 @@ int main()
 	system("pause");
 
 }
+
+//homework
+int main()
+
+{
+	setlocale(LC_ALL, "RUS");
+
+	float x = 0.4 * pow(10, 4);
+	float y = -0.875;
+	float z = -0.475 * pow(10, -3);
+
+	float res1 = pow(fabs(cos(x) - cos(y)), 1 + 2 * pow(sin(y), 2));
+	float res2 = pow(z, 2) / 2;
+	float res3 = pow(z, 3) / 3;
+	float res4 = pow(z, 4) / 4;
+	float res5 = 1 + z + res2 + res3 + res4;
+	float res6 = res1 * res5;
+
+	printf("Ответ:%.4f\n", res6);
+
+	system("pause");
+
+}
