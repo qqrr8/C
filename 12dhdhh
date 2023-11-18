@@ -2,7 +2,7 @@
 #include <locale.h>
 #define _CRT_SECURE_NO_WARNINGS
 
-// Задание 1
+//ex 1
 
 int main()
 {
@@ -21,7 +21,7 @@ printf("double = %lu\n", sizeof(d));
 printf("char = %lu\n", sizeof(c));
 }
 
-//Задание 2
+//ex 2
 
 int main()
 {
@@ -39,7 +39,7 @@ printf("По адресу %p хранится %c(Адрес переменной
 printf("По адресу %p хранится %c(Адрес переменной = %p)\n ", pd, d, &d);
 }
 
-//Задание 3
+//ex 3
 
 int main()
 {
@@ -57,7 +57,7 @@ x--;
 printf("По даресу %p хранится *ptr=%d\n", pa, *pa);
 }
 
-//Задание 4
+//ex 4
 
 int main()
 {
@@ -82,7 +82,7 @@ ptr_a -= 2;
 printf("По даресу %p хранится *ptr=%f\n", ptr_a, *ptr_a);
 }
 
-//Задание 5
+//ex 5
 
 int main()
 {
