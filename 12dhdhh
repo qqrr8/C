@@ -21,8 +21,6 @@ printf("double = %lu\n", sizeof(d));
 printf("char = %lu\n", sizeof(c));
 }
 
-//ex 2
-
 //ex 3
 
 int main()
