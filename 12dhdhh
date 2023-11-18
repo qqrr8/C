@@ -23,22 +23,6 @@ printf("char = %lu\n", sizeof(c));
 
 //ex 2
 
-int main()
-{
-setlocale(LC_ALL, "RUS");
-int* pi, a = 5; ;
-
-float* pf, f = 2.1f;
-double* pd, d = 4.1f;
-char* pc, c = 2.29f, i = '5';
-pc = &i;
-pi = &a;
-pd = &d;
-printf("По адресу %p хранится %c(Адрес переменной = %p)\n ", pc, c, &c);
-printf("По адресу %p хранится %c(Адрес переменной = %p)\n ", pi, a, &a);
-printf("По адресу %p хранится %c(Адрес переменной = %p)\n ", pd, d, &d);
-}
-
 //ex 3
 
 int main()
