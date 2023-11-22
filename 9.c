@@ -7,8 +7,8 @@
 void main()
 {
 	int row, col;
-	for (col = 25; col != COL; col++) {
-		for (row = col; row != ROW; row++)
+	for (col = 25; col <= COL; col++) {
+		for (row = col; row <= ROW; row++)
 		printf("%5d", col/5);
 		printf("\n");
 	}
