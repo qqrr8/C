@@ -28,140 +28,6 @@ void main()
 }
 
 //ex 3
-void main()
-{
-	setlocale(LC_ALL, "RUS");
-	float G;
-	char sym = '*';
-	int n;
-	printf("Выберите фигуру:\n1 - квадрат\n2 - треугольник\n");
-	scanf("%d", &n);
-	if (n <= 1)
-	{
-		printf("Введите длину стороны квадрата: ");
-		scanf("%f", &G);
-		for (int i = 0; i < G; i++) 
-		{
-			for (int j = 0; j < G; j++) 
-			{
-				putchar(sym);
-			}
-			printf("\n");
-		}
-	}
-	else
-	{
-		printf("Введите длину стороны треугольника: ");
-		scanf("%f", &G);
-		int a = 0;
-		for (int i = G; i > 0; i--)
-		{
-			printf("\n");
-			for (int i = 0; i <= a; i++)
-			{
-				putchar(sym);
-			}
-			a++;
-		}
-		printf("\n");
-	}
-
-	int v;
-	printf("Расчитать площадь - 1\n");
-	printf("Вывести определение фигуры - 2\n");
-	printf("Нарисовать фигуру - 3\n");
-	scanf("%d", &v);
-	if (v <= 1)
-	{
-		float tr = (G * G) / 2;
-		if (n <= 1)
-			printf("Площадь фигуры равна:%d\n", G * G);
-		else
-			printf("Площадь фигуры равна:%.1f\n", tr);
-	}
-	if (v = 2)
-	{
-		if (n <= 1)
-			printf("Квадрат\n");
-		else
-			printf("Треугольник\n");
-	}
-	if (v >= 3)
-	{
-		
-	}
-	system("pause");
-}
-
-
-//ex 3 not ready
-void main()
-{
-	setlocale(LC_ALL, "RUS");
-	float G;
-	char sym = '*';
-	int n;
-	printf("Выберите фигуру:\n1 - квадрат\n2 - треугольник\n");
-	scanf("%d", &n);
-	if (n <= 1)
-	{
-		printf("Введите длину стороны квадрата: ");
-		scanf("%f", &G);
-		for (int i = 0; i < G; i++) 
-		{
-			for (int j = 0; j < G; j++) 
-			{
-				putchar(sym);
-			}
-			printf("\n");
-		}
-	}
-	else
-	{
-		printf("Введите длину стороны треугольника: ");
-		scanf("%f", &G);
-		int a = 0;
-		for (int i = G; i > 0; i--)
-		{
-			printf("\n");
-			for (int i = 0; i <= a; i++)
-			{
-				putchar(sym);
-			}
-			a++;
-		}
-		printf("\n");
-	}
-
-	int v;
-	printf("Расчитать площадь - 1\n");
-	printf("Вывести определение фигуры - 2\n");
-	printf("Нарисовать фигуру - 3\n");
-	scanf("%d", &v);
-	if (v <= 1)
-	{
-		float tr = (G * G) / 2;
-		if (n <= 1)
-			printf("Площадь фигуры равна:%d\n", G * G);
-		else
-			printf("Площадь фигуры равна:%.1f\n", tr);
-	}
-	if (v = 2)
-	{
-		if (n <= 1)
-			printf("Квадрат\n");
-		else
-			printf("Треугольник\n");
-	}
-	if (v >= 3)
-	{
-		
-	}
-	system("pause");
-}
-
-
-//ex 3
 void draw_square()
 {
 	setlocale(LC_ALL, "RUS");
@@ -209,20 +75,59 @@ float area_triangle(float side_t)
 	return side_t * side_t;
 }
 
-void main()
+int main()
 {
 	setlocale(LC_ALL, "RUS");
-	printf("Выберите фигуру:\n1 - квадрат\n2 - треугольник\n");
-	int n;
-	scanf("%d", &n);
-	if (n <= 1)
+	int choosef;
+	int choosed;
+	float area;
+	do
 	{
-		draw_square();
-	}
-	else
-	{
-		draw_triangle();
-	}
-
-	float side_s = G;
+		printf("Выберите фигуру:\n1 - квадрат\n2 - треугольник\n");
+		scanf("%d", &choosef) ;
+    } 
+		while ((choosef < 1) || (choosef > 2));
+		if (choosef == 1)
+		{
+			do
+			{
+				printf("Выберите действие:\n1 - рассчитать площадь;\n2 - вывести определение фигуры;\n3 - нарисовать фигуру\n");
+				scanf("%d", &choosed);
+			} 
+			while ((choosed < 1) || (choosed > 3));
+			if (choosed == 1)
+			{
+				//area
+			}
+			if (choosed == 2)
+			{
+				printf("Это квадрат\n");
+			}
+			if (choosed == 3)
+			{
+				draw_square();
+			}
+		}
+		if (choosef == 2)
+		{
+			do 
+			{
+				printf("Выберите действие:\n1 - рассчитать площадь;\n2 - вывести определение фигуры;\n3 - нарисовать фигуру\n");
+				scanf("%d", &choosed);
+			}
+			while ((choosed < 1) || (choosed > 3));
+			if (choosed == 1)
+			{
+				//area
+			}
+			if (choosed == 2)
+			{
+				printf("Это треугольник\n");
+			}
+			if (choosed == 3)
+			{
+				draw_triangle();
+			}
+		}
+		system("pause");
 }
